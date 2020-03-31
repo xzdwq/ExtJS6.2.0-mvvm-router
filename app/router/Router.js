@@ -14,8 +14,7 @@ Ext.define('xzdwq.router.Router', {
   },
   addContentToCenterRegion: function( config ) {
     var vp = Ext.getCmp('vp');
-    var view = vp.layout.centerRegion;
-        cmp = vp.down( '[xtype=' + config.xtype + ']' )
+    var cmp = vp.down('[xtype=' + config.xtype + ']');
     if( !cmp ) {
         vp.removeAll();
         cmp = vp.add( config );
